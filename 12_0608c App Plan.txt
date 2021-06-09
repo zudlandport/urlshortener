@@ -1,0 +1,59 @@
+CREATE URL shortlink - normal
+-checks DB to see if it already exists
+-if not, it [generates url]
+-(if so, returns existing URL)
+
+CREATE URL shortlink - custom URL
+-checks DB to see if custom URL already in use,
+	-AND that, if its possible to map to a SURN, THAT'S not already in use
+-if not it [saves that url to db]
+-(if so, it bumps back to the user that its taken)
+
+GENERATES URL:
+-doing the Youtube version:
+-pick a Huge Number as 'max supported currently'
+-roll a Random Number between 1 and Huge
+	-(confirm it hasn't already been used,
+	-if it has, do a small # of rerolls before Increasing Huge by a column)
+-convert Random Number into Nice Block of Text:
+	logistic notes:
+	-a-zA-Z0-9 = base 62; add 2 more and we get base 64; - and _
+	char	ascii
+	0-9	48-57
+	A-Z	65-90
+	a-z	97-122
+	- _	45 & 95
+	MySQL unsigned INT size = 4,294,967,295
+	
+-store Random Number in the db as an indexed #(?)
+	-(and for lookups, have the Nice Block of Text to Number function called in the code before it goes after the database)
+-(save the # and URL pairing to the database)
+
+REDIRECTS:
+-user goes to our URL
+-gets sent to the right place
+
+
+	db must track:
+-Short URL Random Number [SURN]* (int)
+-Custom Short URL*
+-URL to direct to
+-createDate
+-total visits
+-visits per day
+
+
+*: how do we distinguish these 2?
+-Well, one easy way is:
+	a) give Custom URLs options not available to Short URLs (for example, "-"),
+	b) AND give them larger length-option than current SURN;
+	c) and if NEITHER of those work, we ALSO store its # in the SURN int field
+-AND if the user DOESN'T take advantage of that...
+	-we could do something like add one at the end anyway (in the DB only)?
+	-OR ALL of our server-hits automatically treat every URL like a SURN,
+	-OR, as listed above, look at option (c), that's pretty sweet:
+		-now we only have to deal with scrubbing a URL request for (a) or (b) conditions;
+		-if either exist, we're going at Custom Short URL
+		-if neither, even if this was BUILT as a custom, we're USING it as a SURN
+
+

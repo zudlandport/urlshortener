@@ -1,0 +1,7 @@
+6/8 Tue
+12:56-1:37		Outline & Plan (40 min)
+
+1:38-1:49		set up Django project (10 min)
+
+6/9 Wed
+8:37-				resuming Django project
