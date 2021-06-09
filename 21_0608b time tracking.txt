@@ -5,4 +5,5 @@
 
 6/9 Wed
 8:37-11:00		setting up Django project / transitioning into application (2hrs 27min)
-11:00-__:__    getting into the cool parts of the code (FUS, model)
+11:00-12:51    getting into the cool parts of the code (FUS, model) (1hr 51min)
+12:52-__:__    uploading (pre-model) Django application to GitHub before lunch
