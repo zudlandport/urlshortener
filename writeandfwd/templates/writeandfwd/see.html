@@ -5,6 +5,12 @@ INCOMING PARAMETERS:
       myfwdurlstring
       wascustomtitle
       createdate
+      
+OPTIONAL INCOMING PARAMETERS:
+   hitcount
+   qbyday   - model containing
+      date
+      count(?)
 {% endcomment %}<!DOCTYPE html>
 <html>
    <head>
@@ -16,12 +22,45 @@ INCOMING PARAMETERS:
       {% include "writeandfwd/part_bodytemplate.html"  %}
       <h1>Url Shortener: View a Shortened URL</h1>
     
-      {% if len(qmyfwd) < 1 %}
-         <p class="error">No Url Found</p>
+      {% if qmyfwd %}
+         <p>
+            <div class="series">
+               <div>Shortened URL:</div> <div><strong>{{ qmyfwd.myfwdurlstring }}</strong></div>
+            </div>
+         </p>
+         <p class="postseries">
+            <div class="series">
+               <div>Webpage:</div>  <div><strong>{{ qmyfwd.fwdtourl }}</strong></div>
+            </div>
+         </p>
+         <p class="postseries">
+            <div class="series">
+               <div>Created:</div>  <div><strong>{{ qmyfwd.createdate }}</strong></div>
+            </div>
+         </p>
+         
+         {% if hitcount > 0 %}
+            <p class="postseries">
+               <div class="series">
+                  <div># of Times Forwarded:</div>  <div><strong>{{ hitcount }}</strong></div>
+                  <div><a href="/see/{{ qmyfwd.myfwdurlstring }}/byday">Breakdown by Day?</a></div>
+               </div>
+            </p>
+         {% elif qbyday %}
+            <p class="postseries">
+               <div># of Times Forwarded by Day:  <em><a href="/see/{{ qmyfwd.myfwdurlstring }}/count">back to total</a></em></div>
+               <div class="inblock">
+                  <div class="series">
+                     {% for qrow in qbyday %}
+                        <div>{{ qrow.justdate }}: {{ qrow.hitcount }}</div>
+                     {% endfor %}
+                  </div>
+               </div>
+            </p>
+         {% endif %}
+         
       {% else %}
-         <p>Webpage:  <strong>{% qmyfwd.fwdtourl %}</strong></p>
-         <p>Shortened URL:  <strong>{% qmyfwd.myfwdurlstring %}</strong></p>
-         <p>Created:  <strong>{% qmyfwd.createdate %}</strong></p>
+         <p class="error">No Url Found</p>
       {% endif %}
   
     

@@ -1,0 +1,18 @@
+{% comment %}
+INCOMING PARAMETERS:
+   badfus
+{% endcomment %}<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Url Shortener: No URL Found</title>
+      {% include "writeandfwd/part_headtemplate.html" %}
+   </head>
+   <body>
+      {% include "writeandfwd/part_bodytemplate.html"  %}
+      <h1>Url Shortener: No URL Found</h1>
+    
+      <p class="error">The string '{{ badfus }}' does not redirect to a URL</p>
+    
+   </body>
+</html>
