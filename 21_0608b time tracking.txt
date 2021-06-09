@@ -10,7 +10,8 @@
 TOTAL TIME SO FAR:  5 hrs and 13 min
 
 2:53-3:29      Integrate Model - initial creation (36min)
-3:30-      Model added to application & finish application (List, Add, Fwd & Hit Tracking, Add Custom Page)
+3:30-6:41      Model added to application & finish application (List, Add, Fwd & Hit Tracking, Add Custom Page) (3hrs 11min)
+6:42-       Branch and Upload Complete Application
 
 
 Remaining features for base functionality:
@@ -22,4 +23,7 @@ Remaining features for base functionality:
 
 Desired features:
 -Go with my initial design of changing it from storing Varchar random forwarding string to storing it as an int, so the lookup time is int-based (except for too-long custom strings)
+
+-the myfwdhit Hits Counter model should receive nightly maintenance, collapsing its each-hit-is-a-row data into 1 row of 'counts by hit for (this date)' every 24 hours (if all we care about is its counts-by-day)
+
 -Learn JSON, convert current http-based application to JSON API
