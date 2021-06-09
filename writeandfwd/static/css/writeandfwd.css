@@ -22,9 +22,15 @@ A, A:link, A:visited, A:active, A:hover { color:#37b }
 .error, .errorlist { font-weight:bold; color:#f00 }
 
 .series { display:inline }
-.series div { float:left; margin-right:20px; font-weight:bold }
+.series div { float:left; margin-right:20px }
+.series div a { font-weight:bold }
+
+.inblock { margin-left:10% }
 
 .postseries { clear:both; height:8px }
+
+input[type=url] { width:70% }
+input[type=text] { width:35% }
 
 .layoutchunk { clear:both }
 .layoutslice { float:left; padding-right:5% }
