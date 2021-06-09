@@ -6,4 +6,17 @@
 6/9 Wed
 8:37-11:00		setting up Django project / transitioning into application (2hrs 27min)
 11:00-12:51    getting into the cool parts of the code (FUS, model) (1hr 51min)
-12:52-__:__    uploading (pre-model) Django application to GitHub before lunch
+12:52-12:57    uploading (pre-model) Django application to GitHub before lunch (5min)
+
+TOTAL TIME SO FAR:  5 hrs and 13 min
+
+Remaining features for base functionality:
+-integrate Model (migration, debug)
+-tie Add to Model
+-create List page
+-create Fwd page
+-create Add Custom URL page
+
+Desired features:
+-Go with my initial design of changing it from storing Varchar random forwarding string to storing it as an int, so the lookup time is int-based (except for too-long custom strings)
+-Learn JSON, convert current http-based application to JSON API
