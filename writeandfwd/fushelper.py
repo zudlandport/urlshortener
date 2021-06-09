@@ -6,6 +6,8 @@
 ##    size:  6 columns of base-64 gives us 68 million possible URLs.
 
 import random
+from .models import myfwd
+
 
 def createnew_randomstring():
    ## roll it
