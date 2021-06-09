@@ -1,6 +1,5 @@
 6/8 Tue
 12:56-1:37		Outline & Plan (40 min)
-
 1:38-1:49		set up Django project (10 min)
 
 6/9 Wed
@@ -11,15 +10,17 @@ TOTAL TIME SO FAR:  5 hrs and 13 min
 
 2:53-3:29      Integrate Model - initial creation (36min)
 3:30-6:41      Model added to application & finish application (List, Add, Fwd & Hit Tracking, Add Custom Page) (3hrs 11min)
-6:42-       Branch and Upload Complete Application
+6:42-7:02      Branch and Upload Complete Application (20 min)
+TOTAL TIME SO FAR:  9 hrs and 20 min
 
 
 Remaining features for base functionality:
--integrate Model (migration, debug)
--tie Add to Model
--create List page
--create Fwd page
--create Add Custom URL page
+x-integrate Model (migration, debug)
+x-tie Add to Model
+x-create List page
+x-create Fwd page
+x-create Add Custom URL page
+-create ReadMe & support Branch for Final Version
 
 Desired features:
 -Go with my initial design of changing it from storing Varchar random forwarding string to storing it as an int, so the lookup time is int-based (except for too-long custom strings)
