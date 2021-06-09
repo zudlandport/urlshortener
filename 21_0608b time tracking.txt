@@ -4,4 +4,5 @@
 1:38-1:49		set up Django project (10 min)
 
 6/9 Wed
-8:37-				resuming Django project
+8:37-11:00		setting up Django project / transitioning into application (2hrs 27min)
+11:00-__:__    getting into the cool parts of the code (FUS, model)
