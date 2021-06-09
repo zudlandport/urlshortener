@@ -1,0 +1,30 @@
+body { margin:0px; padding:4px }
+
+h1, h2, h3, h4 { color:#393 }
+
+h1 { margin:8px 0px 18px 0px; font-size:28px }
+h2 { font-size:24px }
+h3 { font-size:20px }
+
+A, A:link, A:visited, A:active, A:hover { color:#37b }
+
+.generalnav { margin:-4px -4px 12px -4px; padding:4px; background-color:#393; color:#fff }
+.generalnav A, .generalnav A:link, .generalnav A:visited, .generalnav A:active, .generalnav A:hover { color:#6ff }
+.generalnavbits { clear:both }
+.generalnavbits div { display:inline }
+
+.generalnavback { float:right }
+.generalnavback div { margin-left:15px; margin-right:0px }
+.generalnavcrumb div { margin-right:15px; position:relative }
+
+.none { font-style:italic; color:#888 }
+
+.error, .errorlist { font-weight:bold; color:#f00 }
+
+.series { display:inline }
+.series div { float:left; margin-right:20px; font-weight:bold }
+
+.postseries { clear:both; height:8px }
+
+.layoutchunk { clear:both }
+.layoutslice { float:left; padding-right:5% }

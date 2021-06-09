@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Url Shortener</title>
+      {% include "writeandfwd/part_headtemplate.html" %}
+   </head>
+   <body>
+      {% include "writeandfwd/part_bodytemplate.html"  %}
+      <h1>Url Shortener</h1>
+    
+      {% if dfeatures %}
+         <div class="series">
+            {% for key, value in dfeatures.items %}
+            	<div><a href="{{ key }}">{{ value }}</a></div>
+            {% endfor %}
+         </div>
+         <div class="postseries"></div>
+      {% else %}
+         <p><em>No Features Implemented</em></p>
+      {% endif %}
+  
+    
+   </body>
+</html>

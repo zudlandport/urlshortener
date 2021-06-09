@@ -1,0 +1,29 @@
+{% comment %}
+INCOMING PARAMETERS:
+   qmyfwd - model containing:
+      fwdtourl
+      myfwdurlstring
+      wascustomtitle
+      createdate
+{% endcomment %}<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Url Shortener: View a Shortened URL</title>
+      {% include "writeandfwd/part_headtemplate.html" %}
+   </head>
+   <body>
+      {% include "writeandfwd/part_bodytemplate.html"  %}
+      <h1>Url Shortener: View a Shortened URL</h1>
+    
+      {% if len(qmyfwd) < 1 %}
+         <p class="error">No Url Found</p>
+      {% else %}
+         <p>Webpage:  <strong>{% qmyfwd.fwdtourl %}</strong></p>
+         <p>Shortened URL:  <strong>{% qmyfwd.myfwdurlstring %}</strong></p>
+         <p>Created:  <strong>{% qmyfwd.createdate %}</strong></p>
+      {% endif %}
+  
+    
+   </body>
+</html>

@@ -1,0 +1,26 @@
+{% comment %}
+OPTIONAL INCOMING PARAMETERS:
+   dnavlinks   -an array of links, containing:
+      dcrumb   -breadcrumb of places we've been
+      dback    -'back to' links
+{% endcomment %}<!DOCTYPE html>
+<div class="generalnav">
+   <div class="generalnavbits generalnavback">
+      {% if dnavlinks.dback %}
+         <div>Related:</div>
+         {% for thelink,thedesc in dnavlinks.dback.items %}
+            <div><a href="{{ thelink }}">{{ thedesc }}</a></div>
+         {% endfor %}
+      {% endif %}
+      <div><a href="/">Url Shortener</a></div>
+   </div>
+   {% if dnavlinks.dcrumb %}
+      <div class="generalnavbits generalnavcrumb">
+         <div>Back To:</div>
+         {% for thelink,thedesc in dnavlinks.dcrumb.items %}
+            <div><a href="{{ thelink }}">{{ thedesc }}</a></div>
+         {% endfor %}
+      </div>
+   {% endif %}
+   <div class="generalnavbits"></div>
+</div>
