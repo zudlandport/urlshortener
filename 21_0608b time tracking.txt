@@ -9,7 +9,8 @@
 12:52-12:57    uploading (pre-model) Django application to GitHub before lunch (5min)
 TOTAL TIME SO FAR:  5 hrs and 13 min
 
-2:53-      Integrate Model
+2:53-3:29      Integrate Model - initial creation (36min)
+3:30-      Model added to application & finish application (List, Add, Fwd & Hit Tracking, Add Custom Page)
 
 
 Remaining features for base functionality:
