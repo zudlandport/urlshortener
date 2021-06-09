@@ -7,8 +7,10 @@
 8:37-11:00		setting up Django project / transitioning into application (2hrs 27min)
 11:00-12:51    getting into the cool parts of the code (FUS, model) (1hr 51min)
 12:52-12:57    uploading (pre-model) Django application to GitHub before lunch (5min)
-
 TOTAL TIME SO FAR:  5 hrs and 13 min
+
+2:53-      Integrate Model
+
 
 Remaining features for base functionality:
 -integrate Model (migration, debug)
