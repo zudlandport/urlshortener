@@ -50,7 +50,7 @@ Before you can run this application, you will need to install Python and Django,
 
 
 ### Branches:
-I have created a `after-5.25-hours` branch on GitHub, containing all the progress I'd made in my first 5.25 hours of work; its incomplete; it has some architecture, but the Module isn't implemented yet yet.
+I have created a `after-5.25-hours` branch on GitHub, containing all the progress I'd made in my first 5.25 hours of work; its incomplete; it has some architecture, but the Module isn't implemented yet.
 
 
 ## Design Decisions:
