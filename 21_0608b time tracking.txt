@@ -13,7 +13,8 @@ TOTAL TIME SO FAR:  5 hrs and 13 min
 TOTAL TIME SO FAR:  9 hrs and 20 min
 
 6/10 Thu
-7:47-        GitHub documentation / summary
+7:47-8:26        GitHub documentation / summary / Github download test (~ 45min)
+8:27-        some final code debugging
 
 
 Remaining features for base functionality:
