@@ -4,16 +4,16 @@ Code sample for a bit.ly-like URL shortener / redirect web application, includin
 ![21_0609a SCREENPRINT url shortner](https://user-images.githubusercontent.com/54818691/121521768-71803c80-c9c2-11eb-9387-5ad2cc104304.png)
 
 ## Challenges:
-The biggest challenge was that two elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall coding time was closer to 10 hours than 4 hours -- though I will have a branch that marks my progress after 5.25 hours which shows architecture but has no Module implementation yet) and the other challenge I did not overcome.
+The biggest challenge was that two elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall coding time was closer to 10 hours than 4 hours -- though my `after-5.25-hours` branch marks my progress after 5.25 hours -- some architecture but no Module yet), and the other challenge I did not overcome.
 
 
-Challenge 1 was that the completed product had to be encapsulated in GitHub; that meant I would either have to,
+Challenge 1 was that the completed product had to be encapsulated into GitHub.  That meant I would either have to,
 
 A) use Python/Django, which is a language and framework I have installed locally and uploaded to GitHub before, but which I have only written one project in before.
 
-B) or if I used my go-to server-side language, PHP, I would have to learn how to run it and a database locally.
+B) or if I used my go-to server-side language, PHP, I would have to learn how to run it and a database locally.  (Currently all my hobby development is done on my hosting company's server).
 
-I went with (A), as I want to spend more time increasing my Python/Django fluency.
+I went with (A), as I want to increase my Python/Django fluency.
 
 
 Challenge 2 was that I've never written JSON APIs before; if I finished the application in time, I hoped to learn enough to replace the standard HTTP interface with a JSON API, but I didn't have the time.
@@ -50,7 +50,7 @@ Before you can run this application, you will need to install Python and Django,
 
 
 ### Branches:
-I will (shortly) be creating a `After 5.25 hours` branch on GitHub, if that's of use, before I merge my final-version changes into the main branch.
+I have created a `after-5.25-hours` branch on GitHub, containing all the progress I'd made in my first 5.25 hours of work; its incomplete; it has some architecture, but the Module isn't implemented yet yet.
 
 
 ## Design Decisions:
@@ -92,3 +92,7 @@ I included my 2 planning documents I created during my first 30-45 minutes of th
 
 I also included my basic time-tracking, broken down by task:
 `21_0608b time tracking.txt`
+
+
+## In Conclusion
+I hope I've front-loaded the most vital information about my work on this assignment, and hope that I have made my workflow and development process clear.
