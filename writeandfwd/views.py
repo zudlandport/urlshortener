@@ -70,7 +70,7 @@ class addfwd(TemplateView):
          if len(qalready) > 0:
             ## (show the user a PRE-EXISTING webpage forwarder)
             ## (at some point we consider saying "this already existed..")
-            thisstr = qalready.myfwd_customtitle
+            thisstr = qalready[0].myfwdurlstring
             return HttpResponseRedirect('/see/' + thisstr)
             
          else:
@@ -207,13 +207,14 @@ class seeafwd_details(TemplateView):
                   justdate = TruncDate('hitdate')
                ).values('justdate'
                ).annotate(hitcount=Count('justdate')
-               ).order_by('justdate')
+               ).order_by('-justdate')
 
       qfzero = ''
       if len(qf):
          qfzero = qf[0]
       context = {
          'qmyfwd': qfzero,
+         'hitcalc': True,
          'hitcount': hitcount,
          'qbyday': qbyday
       }
