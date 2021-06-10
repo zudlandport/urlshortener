@@ -14,7 +14,7 @@ Before you can run this application, you will need to install Python and Django,
 1. Download this GitHub code base
 1. Then run the Django database migration, to create (and populate where applicable) my application's database tables into Django's built-in database:
 	* for example, in Windows with Python installed, open the Command Line, change-directory to the 'urlshortener\urlshortener' folder with its manage.py file, and enter:
-	*  `python manage.py makemigrations trackart`
+	*  `python manage.py makemigrations urlshortener`
 	* then enter:
 	*  `python manage.py migrate`
 	* this will create the database tables.
