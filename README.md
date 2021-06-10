@@ -4,7 +4,7 @@ Code sample for a bit.ly-like URL shortener / redirect web application, includin
 ![21_0609a SCREENPRINT url shortner](https://user-images.githubusercontent.com/54818691/121521768-71803c80-c9c2-11eb-9387-5ad2cc104304.png)
 
 ## Challenges:
-The biggest challenge was that two elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall coding time was closer to 10 hours than 4 hours -- though my `after-5.25-hours` branch marks my progress after 5.25 hours -- some architecture but no Module yet), and the other challenge I did not overcome.
+The biggest challenge was that two elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall coding time was closer to 10 hours than 4 hours; before merging my final changes, I created a `after-5.25-hours` branch that contains my progress after 5.25 hours:  some architecture but no Module yet).  The other challenge I did not overcome.
 
 
 Challenge 1 was that the completed product had to be encapsulated into GitHub.  That meant I would either have to,
@@ -16,7 +16,7 @@ B) or if I used my go-to server-side language, PHP, I would have to learn how to
 I went with (A), as I want to increase my Python/Django fluency.
 
 
-Challenge 2 was that I've never written JSON APIs before; if I finished the application in time, I hoped to learn enough to replace the standard HTTP interface with a JSON API, but I didn't have the time.
+Challenge 2 was that I've never written JSON APIs before; if I finished the application in time, I hoped to learn enough to replace the standard HTTP interface with a JSON API, but as the overall development time was over 9 hours, I didn't have time to tackle this.
 
 
 ##  Setup:
