@@ -3,6 +3,22 @@ Code sample for a bit.ly-like URL shortener / redirect web application, includin
 
 ![21_0609a SCREENPRINT url shortner](https://user-images.githubusercontent.com/54818691/121521768-71803c80-c9c2-11eb-9387-5ad2cc104304.png)
 
+## Challenges:
+The biggest challenge was that two elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall coding time was closer to 10 hours than 4 hours -- though I will have a branch that marks my progress after 5.25 hours which shows architecture but has no Module implementation yet) and the other challenge I did not overcome.
+
+
+Challenge 1 was that the completed product had to be encapsulated in GitHub; that meant I would either have to,
+
+A) use Python/Django, which is a language and framework I have installed locally and uploaded to GitHub before, but which I have only written one project in before.
+
+B) or if I used my go-to server-side language, PHP, I would have to learn how to run it and a database locally.
+
+I went with (A), as I want to spend more time increasing my Python/Django fluency.
+
+
+Challenge 2 was that I've never written JSON APIs before; if I finished the application in time, I hoped to learn enough to replace the standard HTTP interface with a JSON API, but I didn't have the time.
+
+
 ##  Setup:
 Before you can run this application, you will need to install Python and Django, download my code from GitHub, perform 2 command line statements to set up and populate the database, then 1 command line statement to run the Django server.  Here is how I did this:
 
@@ -24,25 +40,6 @@ Before you can run this application, you will need to install Python and Django,
 1. Then you can see the application running locally at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
-
-## Design Decisions - Challenges:
-
-The biggest challenge was that 2 elements of this assignment included significant ramp-up time for me, one of which I overcame (though my overall assignment completion time was closer to 10 hours than 4 hours -- I will have a branch that marks my initial uploaded after 5.25 hour progress, which shows architecture but has no Module implementation yet) and the other of which I did not.
-
-
-Challenge 1 was that the completed product had to be encapsulated in GitHub; that meant I would either have to,
-
-A) use Python/Django, which is a language and framework I have installed locally and uploaded to GitHub before, but which I have only written one project in before.
-
-B) or if I used my go-to server-side language, PHP, I would have to learn how to run it and a database locally.
-
-I went with (A), as I want to spend more time increasing my Python/Django fluency.
-
-
-Challenge 2 was that I've never worked with JSON API before; if I finished the application in time, I hoped to learn enough to replace the standard HTTP interface with a JSON API, but I didn't have the time.
-
-
-
 ### Tests of Less Obvious Functionality:
 
 -Go to "Add a URL", add the same URL twice (it will only create a shortened URL once, so the 2nd+ time you try, it will take you to the existing record -- ie the first Random Forwarding String)
@@ -56,7 +53,7 @@ Challenge 2 was that I've never worked with JSON API before; if I finished the a
 I will (shortly) be creating a `After 5.25 hours` branch on GitHub, if that's of use, before I merge my final-version changes into the main branch.
 
 
-## Design Decisions - Cool Stuff:
+## Design Decisions:
 
 ### Cool Thing 1 - Random Forwarding String saved as Integer (not implemented):
 
