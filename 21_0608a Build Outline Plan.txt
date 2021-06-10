@@ -12,5 +12,27 @@ est total:  [2.25 - 4]
 
 
 
+===
+
+OVERALL VS ACTUAL:
+
+[original estimate], {actual time taken}
+
+OVERALL SCOPE:
+-plan - [.25-.75 hour]  - {.75 hr}
+-implement in Django over standard HTTP:
+	-ramp up to how to start a new Django project - [.25-1 hr] {2.5}
+	-get database module functionality working - [.25-.75 hr] {.5}
+	-actual application code - [1] {5 hr}
+-put initial application on GitHub [.5-1] {.5}
+
+est total:  [2.25 - 4] {9.25}
+
+-partially because Django ramp-up was much slower than anticipated
+-but the application coding went slower as well;
+   -(though there's a nontrivial amount of a blurry line between the two)
+
+
+-upgrade interface to JSON API (which is new to me) - [1-5 hrs] {n/a}
 
 
