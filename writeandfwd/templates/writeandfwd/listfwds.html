@@ -1,0 +1,33 @@
+{% comment %}
+INCOMING PARAMETERS:
+   qfwds -query of myfwd table
+{% endcomment %}<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Url Shortener: List</title>
+      {% include "writeandfwd/part_headtemplate.html" %}
+   </head>
+   <body>
+      {% include "writeandfwd/part_bodytemplate.html"  %}
+      <h1>Url Shortener: List</h1>
+    
+      {% if qfwds %}
+         <ol>
+         {% for qrow in qfwds %}
+            <li class="postseries">
+               <div class="series">
+                  <div><a href="f/{{ qrow.myfwdurlstring  }}" target="_blank">f/{{ qrow.myfwdurlstring  }}</a></div>
+                  <div>{{ qrow.fwdtourl }}</div>
+                  <div><em>created, {{ qrow.createdate }}</em></div>
+                  <div><a href="see/{{ qrow.myfwdurlstring  }}/count">Fwd Count</a></div>
+               </div>
+            </li>
+         {% endfor %}
+         </ol>
+      {% else %}
+         <p><em>None</em></p>
+      {% endif %}
+    
+   </body>
+</html>

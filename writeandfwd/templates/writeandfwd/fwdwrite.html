@@ -3,6 +3,7 @@ OPTIONAL INCOMING PARAMETERS (for Edits / validation fails):
    pkid
    form
    error
+   writingcustom -- if defined and true, we're doing a custom form.
 {% endcomment %}<!DOCTYPE html>
 <html>
    <head>
@@ -18,7 +19,11 @@ OPTIONAL INCOMING PARAMETERS (for Edits / validation fails):
          <form action="/editfwd/{{ pkid }}" method="post">
       {% else %}
          <h1>Add a New Webpage</h1>
-         <form action="/addfwd" method="post">
+         {% if writingcustom %}
+            <form action="/addfwdcustom" method="post">
+         {% else %}
+            <form action="/addfwd" method="post">
+         {% endif %}
       {% endif %}
 
       {% if error %}
