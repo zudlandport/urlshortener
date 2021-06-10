@@ -15,8 +15,9 @@ TOTAL TIME SO FAR:  9 hrs and 20 min
 6/10 Thu
 7:47-8:26        GitHub documentation / summary / Github download test (39min)
 8:27-9:02        some final code debugging (35min)
-1:05-         finishing GitHub documentation
+1:05-2:32        finishing GitHub ReadMe, creating "after-5.25-hours" branch, merging "final-version" branch into main (1hr 27min)
 
+FINAL TIME TOTAL:  12 hrs and 1 minute
 
 Remaining features for base functionality:
 x-integrate Model (migration, debug)
