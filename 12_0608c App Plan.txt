@@ -56,4 +56,7 @@ REDIRECTS:
 		-if either exist, we're going at Custom Short URL
 		-if neither, even if this was BUILT as a custom, we're USING it as a SURN
 
+===
 
+POSTMORTEM:
+The biggest change was that I entirely dropped the idea of storing the Random Short Strings as Integers in the database, as the conversion process wasn't something I felt comfortable mathing out in less than 15-30 minutes. Which is a shame, because coming from a database world where the nuts and bolts are less abstracted than they are in Django, having an application's most common lookup be based on an Int rather than a Varchar would be quite important; however I imagine with the right indices, it shouldn't be a bottleneck.
